@@ -1,25 +1,10 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {}
-}
-
-{
-  "name": "Kali NetHunter Custom",
+  "name": "Kali NetHunter Hushcat",
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "../Dockerfile"
   },
-  "runArgs": [
-    "--cap-add=SYS_PTRACE",
-    "--security-opt",
-    "seccomp=unconfined"
-  ],
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-vscode.cpptools",
-        "ms-azuretools.vscode-docker"
-      ]
-    }
-  },
-  "postCreateCommand": "sudo apt update && sudo apt install -y curl wget git"
+  "settings": {},
+  "extensions": [],
+  "postCreateCommand": "",
+  "remoteUser": "root"
 }
